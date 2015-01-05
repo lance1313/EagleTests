@@ -20,7 +20,7 @@ public class TheAofEandRFrame extends JFrame {
 	private RufflesController controller;
 	private String Scene;
 	
-	public TheAofEandRFrame(RufflesController rufflesController)
+	public TheAofEandRFrame(RufflesController rufflesController/*,KidPanel basePanel*/)
 	{
 		basePanel = new KidPanel(rufflesController);
 		Scene = "TitleScene";

@@ -45,9 +45,6 @@ public class RufflesController
 	
 	}
 	
-	public void Scene()
-	{
-
-	}
+	
 
 }
