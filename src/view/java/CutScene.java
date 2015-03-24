@@ -2,9 +2,16 @@ package view.java;
 
 import javax.swing.*;
 
+import controller.java.RufflesController;
+
 public class CutScene extends JPanel
 {
 	
+	public CutScene(RufflesController rufflesController)
+	{
+		
+	}
+
 	public void ShowScreen()
 	{
 		

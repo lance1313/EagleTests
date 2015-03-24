@@ -1,4 +1,7 @@
-package model.java;
+package Characthers;
+
+import model.java.Moves;
+
 //import view.java.BattleScene;
 //import model.java.Moves;
 public class Enemies extends Moves {

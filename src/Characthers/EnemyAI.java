@@ -1,4 +1,4 @@
-package model.java;
+package Characthers;
 
 public class EnemyAI {
 

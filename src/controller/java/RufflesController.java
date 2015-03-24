@@ -1,12 +1,13 @@
 package controller.java;
 
 
-import model.java.Enemies;
-import model.java.MainCharacters_Bosses;
+import Characthers.Enemies;
+import Characthers.MainCharacters_Bosses;
 import view.java.BattleScene;
 import view.java.KidPanel;
-import view.java.KidView;
+//import view.java.KidView;
 import view.java.TheAofEandRFrame;
+import view.java.TitleFrame;
 /**
  * 
  * @author eagle1421
@@ -15,20 +16,20 @@ import view.java.TheAofEandRFrame;
 public class RufflesController 
 {
 	private TheAofEandRFrame appFrame;
-	private KidView appView;
+	private TitleFrame titleView;
+	
 	private BattleScene Battle;
 	private KidPanel KPanel;
 	private Enemies enemy;
 	private MainCharacters_Bosses MC_B;
 	public int battle;
-	public boolean isBattle;
+	
 	
 	public RufflesController()
 	{
-		appView = new KidView(this);
-		//KPanel = new KidPanel(this);
-		isBattle = false;
-		appFrame = new TheAofEandRFrame(this);
+		
+	    titleView = new TitleFrame(this);
+		
 		
 	}
 	//hi
@@ -41,7 +42,7 @@ public class RufflesController
 		
 		//KidPanel panel = (KidPanel) appFrame.getContentPane();
 		
-		appFrame.setupFrame();
+		titleView.setupFrame();
 	
 	}
 	

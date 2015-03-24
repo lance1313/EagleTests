@@ -18,7 +18,7 @@ import controller.java.RufflesController;
 public class KidPanel extends JPanel 
 {
 
-	private JButton firstButton;
+	JButton firstButton;
 	private JButton battleButton;
 	private JTextField firstTextField;
 	private SpringLayout baseLayout;
@@ -28,7 +28,8 @@ public class KidPanel extends JPanel
 	private BattleScene battle;
 	private FieldPanel field;
 	private CutScene cutScene;
-	private KidView View;
+//	private KidView View;
+	private TheAofEandRFrame frame;
 	private int panel;
 	
 	
@@ -41,7 +42,8 @@ public class KidPanel extends JPanel
 	public KidPanel(RufflesController rufflesController/*,BattleScene battle,FieldPanel field,CutScene cutScene*/) {
 		
 	this.baseController = rufflesController;
-	this.View = new KidView(baseController);
+
+	//this.frame = new TheAofEandRFrame(rufflesController);
 	firstButton = new JButton("press to battle");
 	battleButton = new JButton("battle!!!");
 	firstTextField = new JTextField(25);
@@ -49,10 +51,9 @@ public class KidPanel extends JPanel
 	chatArea = new JTextArea(5,20);
 	chatPane = new JScrollPane(chatArea);
 	panel = 1;
-	this.field = field;
-	this.battle = battle;
-	this.cutScene = cutScene;
-	
+//	this.field = field;
+//	this.battle = battle;
+//	this.cutScene = cutScene;
 	ShowScreen();
 
 	}
@@ -60,29 +61,27 @@ public class KidPanel extends JPanel
 
 	public void ShowScreen()
 	{
-		if(panel == 1)
-		{
+		
 		setupPane();
 		setupPanel();
 		setupLayout();
 		setupListeners();
-		}
-		else if(panel == 2)
-		{
-			field.ShowScreen();
-		}
-		else if(panel == 3)
-		{
-			battle.ShowScreen();
-		}
-		else if(panel == 4)
-		{
-			cutScene.ShowScreen();
-		}
-//		setupPane();
-//		setupPanel();
-//		setupLayout();
-//		setupListeners();
+//		if(panel == 1)
+//		{
+//		}
+//		else if(panel == 2)
+//		{
+//			field.ShowScreen();
+//		}
+//		else if(panel == 3)
+//		{
+//			battle.ShowScreen();
+//		}
+//		else if(panel == 4)
+//		{
+//			cutScene.ShowScreen();
+//		}
+
 	}
 	
 	
@@ -131,7 +130,9 @@ public class KidPanel extends JPanel
 		{
 			public void actionPerformed(ActionEvent click)
 			{
-				panel = 2;
+				
+				//frame.Scene = 2;
+				
 			}
 		});
 	}
